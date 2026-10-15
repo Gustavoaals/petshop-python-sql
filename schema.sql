@@ -6,3 +6,7 @@ CREATE TABLE IF NOT EXISTS tutores (
     criado_ TEXT NOT NULL DEFAULT (datetime('nome','localtime'))
 
 );
+
+CREATE TABLE IF NOT EXISTS pets(
+    
+)
