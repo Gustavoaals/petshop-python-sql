@@ -15,3 +15,7 @@ CREATE TABLE IF NOT EXISTS pets(
     tuto_id INTEGER NOT NULL
     FOREIGN KEY (tuto_id) REFERENCES tutores (id) 
 );
+
+CREATE TABLE IF NOT EXISTS servicos(
+    
+)
