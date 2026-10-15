@@ -8,5 +8,10 @@ CREATE TABLE IF NOT EXISTS tutores (
 );
 
 CREATE TABLE IF NOT EXISTS pets(
-    
-)
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nome NOT NULL,
+    especie NOT NULL,
+    raca TEXT,
+    tuto_id INTEGER NOT NULL
+    FOREIGN KEY (tuto_id) REFERENCES tutores (id) 
+);
