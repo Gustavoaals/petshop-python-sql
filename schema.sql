@@ -17,5 +17,7 @@ CREATE TABLE IF NOT EXISTS pets(
 );
 
 CREATE TABLE IF NOT EXISTS servicos(
-    
-)
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    descricao TEXT NOT NULL UNIQUE,
+    preco REAL NOT NULL CHECK (preco >= 0)
+);
